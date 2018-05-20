@@ -1,0 +1,12 @@
+<!-- define x-image custom element -->
+<define name="x-image" export>
+	<img ${this.attrs} src="http://www.gstatic.com/webp/gallery/${this.xAttrs.src}">
+</define>
+
+<!-- define x-section custom element -->
+<define name="x-section" export>
+	<section ${this.attrs}>
+		<h3>${this.xAttrs.heading}</h3>
+		${this.innerHTML}
+	</section>
+</define>

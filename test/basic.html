@@ -1,0 +1,27 @@
+<link rel="html" href="_components.html" as="x-image,x-section" />
+
+<!-- use x-figure custom element -->
+<x-figure x-src="https://developer.cdn.mozilla.net/media/img/mdn-logo-sm.png" x-alt="MDN Logo">
+	Example Figure
+</x-figure>
+
+<!-- define x-figure custom element -->
+<define name="x-figure">
+	<figure ${this.attrs}>
+		<img src="${this.xAttrs.src}" alt="MDN Logo">
+		<figcaption>${this.innerHTML}</figcaption>
+	</figure>
+</define>
+
+<!-- use x-figure custom element -->
+<x-figure x-src="https://developer.cdn.mozilla.net/media/img/mdn-logo-sm.png" x-alt="MDN Logo">
+	Example Figure
+</x-figure>
+
+<!-- use x-section custom element -->
+<x-section class="some-class" x-heading="Example Heading">
+	<p>Example paragraph of content.</p>
+</x-section>
+
+<!-- use x-image custom element -->
+<x-image x-src="1.webp"></x-image>
